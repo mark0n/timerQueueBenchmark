@@ -15,6 +15,8 @@ epicsTimerQueueBench_LIBS += Com
 epicsTimerQueueBench_SYS_LIBS += benchmark
 epicsTimerQueueBench_SYS_LIBS += pthread
 
+asioTimerBench_SRC += asioTimerBench.cpp
+
 #===========================
 
 include $(TOP)/configure/RULES
