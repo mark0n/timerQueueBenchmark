@@ -8,17 +8,12 @@ include $(TOP)/configure/CONFIG
 #==================================================
 # build a support library
 
-LIBRARY_IOC += tqBench
+PROD_HOST += epicsTimerQueueBench
 
-# xxxRecord.h will be created from xxxRecord.dbd
-#DBDINC += xxxRecord
-# install tqBench.dbd into <top>/dbd
-DBD += tqBench.dbd
-
-# specify all source files to be compiled and added to the library
-#tqBench_SRCS += xxx
-
-tqBench_LIBS += $(EPICS_BASE_IOC_LIBS)
+epicsTimerQueueBench_SRCS += epicsTimerQueueBench.cpp
+epicsTimerQueueBench_LIBS += Com
+epicsTimerQueueBench_SYS_LIBS += benchmark
+epicsTimerQueueBench_SYS_LIBS += pthread
 
 #===========================
 
