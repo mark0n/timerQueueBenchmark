@@ -1,0 +1,5 @@
+bin
+configure/O.*
+dbd
+tqBenchApp/Db/O.*
+tqBenchApp/src/O.*
